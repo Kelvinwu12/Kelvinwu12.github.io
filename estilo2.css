@@ -1,0 +1,169 @@
+p{
+    font-size: 13px;
+}
+
+.pie{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie .grupo{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie .grupo .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie .grupo .box figure img{
+    width: 250px;
+}
+.pie .grupo .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie .grupo .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+ .social{
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    padding-right: 130px;
+    border-radius: 30px;
+}
+
+ .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.titulo{
+    padding-left: 65px;
+}
+
+.footer .social a:hover{
+    opacity: 0.9;
+}
+
+
+.pie .grupo .redsocial a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie .grupo .redsocial a:hover{
+    color: dodgerblue;
+}
+
+.pie .grupo2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie .grupo2 small{
+    font-size: 15px;
+} 
+
+.logo{
+    transition: .8s ease;
+    animation-name: logo;
+    animation-duration: 2s;
+
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    
+}
+
+.logo2{
+    padding-top: 20px;
+    padding-left: 40px;
+    transition: .5s ease;
+}   
+
+.filters {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filters input[type="text"],
+.filters input[type="number"],
+.filters input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+}
+
+.filters input[type="text"]:focus,
+.filters input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.filters input[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .filters form {
+        flex-direction: column;
+    }
+
+    .filters input[type="text"],
+    .filters input[type="number"],
+    .filters input[type="submit"] {
+        width: 100%;
+        max-width: none;
+    }
+}
